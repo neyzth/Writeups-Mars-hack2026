@@ -13,7 +13,9 @@ on vois donc :
 192.168.1.11 - MH-CLI2
 
 On liste les partages du serveur :
-```smbclient -L //192.168.1.1
+```
+smbclient -L //192.168.1.1
+
 ADMIN$ Disk Administration à distance 
 C$ Disk Partage par défaut 
 FLAGCHALL4 Disk 
@@ -23,7 +25,8 @@ NETLOGON Disk Partage de serveur d'accès
 Partage_Temp Disk 
 SYSVOL Disk Partage de serveur d'accès 
 
-Reconnecting with SMB1 for workgroup listing. do_connect: Connection to 192.168.1.1 failed (Error NT_STATUS_RESOURCE_NAME_NOT_FOUND) Unable to connect with SMB1 -- no workgroup available```
+Reconnecting with SMB1 for workgroup listing. do_connect: Connection to 192.168.1.1 failed (Error NT_STATUS_RESOURCE_NAME_NOT_FOUND) Unable to connect with SMB1 -- no workgroup available
+```
 
 
 on vois donc " partage TEMP " 
